@@ -1,3 +1,34 @@
 body {
-  font-family: sans;  
+    background-color: lightgray
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.jumbotron {
+    background-color: firebrick;
+}
+
+.subscriptNote {
+    font-size: 12px;
+}
+
+.labelTitle {
+    margin-left: 10px;
+    display:
+}
+
+.chckBox {
+    display: inline-block;
+    height: 100%;
+    width: 10px;
+    float: left;
+}
+
+.labelTitle {
+    display: inline-block;
+    font-weight: bold;
+    height: 100%;
+    float; left;
 }
