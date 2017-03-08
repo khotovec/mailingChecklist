@@ -1,58 +1,56 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Starter Template for Bootstrap 3.3.7</title>
+    <link rel="shortcut icon" href="">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="custom.css"> </head>
-<style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <style></style>
 
-</style>
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
 
 <body>
-    <div class="container">
-        <div class="jumbotron">
-            <h1>Mailing Checklist</h1>
-            <p style="color: white;">A checklist to help setup mailing jobs.</p>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>A better Calculator</h1>
+            <p>This is an automatic calculator for product Packaging</p>
         </div>
     </div>
     
     <div class="container">
-        <div class="col-lg-12">
-            <h1>Size:</h1>
-            <p>Size determines at what rate the piece will mail. The Longest side is considered the width. Ensure aspect ratio is more than 1.3 and less than 2.5. <span class="subscriptNote"> (Length/Height = Ratio)</span>
-                <br>Refer to the USPS template.</p>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <h2>Quantity</h2>
+            <div class="form-group">
+                <input type="text" class="form-control" id="quantity">
+            </div>
         </div>
-        <div class="col-sm-12">
-            <div>
-                <div>
-                    <div class="chckBox">
-                        <input type="checkbox" value="1" name="size"> </div>
-                    <div class="labelTitle"> Letter (Including postcards, envelopes, cards, booklets and Self-Mailers)
-                        <br>Min. 3.5"x5" - Max 6.125"x11.5" </div>
-                </div>
-                <ul>
-                    <li>A letter size is always horizontal</li>
-                    <li>Must be at least .009" thick</li>
-                    <li>Maximum thickness is .25"</li>
-                </ul>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <h2>Number of Colors</h2>
+            <div class="form-group">
+                <input type="text" class="form-control" id="numberOfColors">
             </div>
-            <div>
-                <div>
-                    <div class="chckBox">
-                        <input type="checkbox" value="1" name="size"> </div>
-                    <div class="labelTitle"> Letter (Including postcards, envelopes, cards, booklets and Self-Mailers)
-                        <br>Min. 3.5"x5" - Max 6.125"x11.5" </div>
-                </div>
-                <ul>
-                    <li>A letter size is always horizontal</li>
-                    <li>Must be at least .009" thick</li>
-                    <li>Maximum thickness is .25"</li>
-                </ul>
-            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <h2>This will Multiply by 2!</h2>
+            <p><button type="button" class="btn btn-primary btn-lg" onclick="firstMath();">Let's do it!</button></p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <h2 id="titleOutput"></h2>
+            <p id="output"></p>
+            <p>comparison Text</p>
         </div>
     </div>
+    <script type="text/javascript" src="javascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
-
 </html>
